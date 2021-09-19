@@ -41,7 +41,7 @@ impl StudentManager {
             .map(|line| {
                 let line = line.unwrap();
                 let mut cols = line
-                    .split(",")
+                    .split(',')
                     .map(|x| x.trim());
                 (cols.next().unwrap().to_string(),
                  cols.next().unwrap().to_string())
