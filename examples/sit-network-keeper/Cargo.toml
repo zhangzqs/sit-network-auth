@@ -1,0 +1,12 @@
+[package]
+name = "sit-network-keeper"
+version = "0.1.0"
+authors = ["zzq <2428698039@qq.com>"]
+edition = "2018"
+
+[dependencies]
+sit-network-auth = { path = "../.." }
+tokio = { version = "1", features = ["full"] }
+exitfailure = "0.5.1"
+structopt = "0.3.22"
+rand = {version="0.8",features = ["small_rng"]}
