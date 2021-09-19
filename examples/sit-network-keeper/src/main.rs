@@ -53,7 +53,6 @@ impl StudentManager {
     }
 
     pub fn choose_randomly(&mut self) -> &Student {
-        println!("{:?}", self.students[0]);
         self.students.iter().choose(&mut self.rng).unwrap()
     }
 }
