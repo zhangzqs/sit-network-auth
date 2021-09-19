@@ -58,8 +58,6 @@ pub async fn login(user: &str, password: &str) -> Result<bool, ExitFailure> {
         ("jsVersion", "4.1"),
         ("v", "857"),
     ];
-    let s = Url::parse_with_params(login_url,
-                           login_parameter).unwrap().to_string();
     let login_result = send_get_request(Url::parse_with_params(login_url,
                                                                login_parameter).unwrap()).await?;
     let login_result = login_result.trim(); //切除首尾空格
