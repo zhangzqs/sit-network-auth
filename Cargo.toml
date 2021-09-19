@@ -2,6 +2,11 @@
 name = "sit-network-auth"
 version = "0.1.0"
 edition = "2018"
+readme = "README.md"
+keywords = ["sit","network","auth"]
+license = "LGPL-2.1"
+repository = "https://github.com/Zhangzqs/sit-network-auth"
+description = "基于Rust编写的上海应用技术大学上网认证库与命令行程序"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
